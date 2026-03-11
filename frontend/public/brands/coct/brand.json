@@ -1,0 +1,23 @@
+{
+  "name": "City of Cape Town",
+  "slug": "coct",
+  "colors": {
+    "primary": "#08677B",
+    "primary_light": "#087FA6",
+    "primary_dark": "#054A5E",
+    "secondary": "#ECF3F9",
+    "accent": "#CCCC00",
+    "dark": "#000000",
+    "light": "#FFFFFF",
+    "neutral_light": "#F5F5F5",
+    "neutral_mid": "#CCCCCC",
+    "alert": "#DC143C",
+    "success": "#28A745"
+  },
+  "typography": {
+    "family": "Helvetica Neue, Arial, sans-serif",
+    "headings_weight": "700",
+    "body_weight": "400"
+  },
+  "description": "Helping Cape Town businesses demonstrate environmental and social commitment through comprehensive ESG reporting."
+}

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" width="200" height="60">
+  <!-- WCPG - Western Cape Provincial Government -->
+  <!-- Primary Color: #001489 (Deep Blue) -->
+  <style>
+    .wcpg-text { font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; fill: #001489; }
+    .wcpg-icon { fill: #001489; }
+  </style>
+
+  <!-- Icon -->
+  <g class="wcpg-icon">
+    <circle cx="15" cy="30" r="12" opacity="0.3"/>
+    <circle cx="15" cy="30" r="8"/>
+  </g>
+
+  <!-- Text -->
+  <text x="35" y="25" class="wcpg-text" font-size="12">WESTERN CAPE</text>
+  <text x="35" y="40" class="wcpg-text" font-size="10" opacity="0.7">Provincial Government</text>
+</svg>

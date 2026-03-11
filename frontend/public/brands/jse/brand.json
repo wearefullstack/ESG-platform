@@ -1,0 +1,22 @@
+{
+  "name": "Johannesburg Stock Exchange",
+  "slug": "jse",
+  "colors": {
+    "primary": "#A3CF61",
+    "primary_light": "#C8E6A0",
+    "primary_dark": "#7FA830",
+    "secondary": "#000000",
+    "accent": "#A3CF61",
+    "dark": "#000000",
+    "light": "#FFFFFF",
+    "success": "#28A745",
+    "error": "#DC3545",
+    "info": "#0066CC"
+  },
+  "typography": {
+    "family": "Arial, Helvetica Neue, sans-serif",
+    "headings_weight": "600",
+    "body_weight": "400"
+  },
+  "description": "Enabling listed companies to meet JSE sustainability disclosure requirements and enhance investor transparency."
+}

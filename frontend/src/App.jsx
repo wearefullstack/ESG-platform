@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrandProvider } from './context/BrandContext'
 import LandingPage from './pages/LandingPage'
 import LoginPage from './pages/LoginPage'
 import OnboardingWizard from './pages/OnboardingWizard'
@@ -44,60 +45,62 @@ function App() {
   }
 
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            isAuthenticated ? (
-              <Navigate to="/dashboard" />
-            ) : (
-              <LandingPage />
-            )
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            isAuthenticated ? (
-              <Navigate to="/dashboard" />
-            ) : (
-              <LoginPage onLogin={handleLogin} />
-            )
-          }
-        />
-        <Route
-          path="/register"
-          element={
-            isAuthenticated ? (
-              <Navigate to="/dashboard" />
-            ) : (
-              <OnboardingWizard />
-            )
-          }
-        />
-        <Route
-          path="/dashboard"
-          element={
-            isAuthenticated ? (
-              <DashboardPage user={user} onLogout={handleLogout} />
-            ) : (
-              <Navigate to="/" />
-            )
-          }
-        />
-        <Route
-          path="/report"
-          element={
-            isAuthenticated ? (
-              <ReportGenerationPage />
-            ) : (
-              <Navigate to="/login" />
-            )
-          }
-        />
-      </Routes>
-    </Router>
+    <BrandProvider>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              isAuthenticated ? (
+                <Navigate to="/dashboard" />
+              ) : (
+                <LandingPage />
+              )
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              isAuthenticated ? (
+                <Navigate to="/dashboard" />
+              ) : (
+                <LoginPage onLogin={handleLogin} />
+              )
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              isAuthenticated ? (
+                <Navigate to="/dashboard" />
+              ) : (
+                <OnboardingWizard />
+              )
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              isAuthenticated ? (
+                <DashboardPage user={user} onLogout={handleLogout} />
+              ) : (
+                <Navigate to="/" />
+              )
+            }
+          />
+          <Route
+            path="/report"
+            element={
+              isAuthenticated ? (
+                <ReportGenerationPage />
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
+          />
+        </Routes>
+      </Router>
+    </BrandProvider>
   )
 }
 

@@ -1,0 +1,114 @@
+.brand-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.brand-selector-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.brand-selector-button:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.brand-selector-logo {
+  height: 24px;
+  width: auto;
+}
+
+.brand-selector-label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.brand-selector-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  color: var(--text-light);
+}
+
+.brand-selector-arrow.open {
+  transform: rotate(180deg);
+}
+
+.brand-selector-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  min-width: 250px;
+  overflow: hidden;
+}
+
+.brand-selector-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.brand-selector-option:hover {
+  background: var(--bg-secondary);
+}
+
+.brand-selector-option.active {
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--primary);
+  padding-left: 12px;
+}
+
+.option-logo {
+  height: 28px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.option-name {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .brand-selector {
+    top: 10px;
+    right: 10px;
+  }
+
+  .brand-selector-button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .brand-selector-logo {
+    height: 20px;
+  }
+
+  .brand-selector-dropdown {
+    min-width: 200px;
+  }
+}

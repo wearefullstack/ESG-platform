@@ -182,6 +182,16 @@
 .partner-header {
   padding: 25px 20px;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.partner-logo {
+  height: 40px;
+  width: auto;
+  opacity: 0.95;
+  filter: brightness(1.1);
 }
 
 .partner-header h3 {

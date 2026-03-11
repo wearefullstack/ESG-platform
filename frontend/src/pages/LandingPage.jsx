@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import BrandSelector from '../components/BrandSelector'
 import '../styles/LandingPage.css'
 
 export default function LandingPage() {
@@ -54,6 +55,7 @@ export default function LandingPage() {
 
   return (
     <div className="landing-page">
+      <BrandSelector />
       {/* Hero Section */}
       <section className="hero" style={{ backgroundColor: '#001489' }}>
         <div className="hero-content">
@@ -116,6 +118,11 @@ export default function LandingPage() {
                   className="partner-header"
                   style={{ backgroundColor: partner.primary }}
                 >
+                  <img
+                    src={`/brands/${partner.slug}/logo.svg`}
+                    alt={partner.name}
+                    className="partner-logo"
+                  />
                   <h3 style={{ color: partner.secondary }}>{partner.name}</h3>
                 </div>
 

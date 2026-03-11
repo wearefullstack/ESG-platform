@@ -1,0 +1,61 @@
+{
+  "brands": [
+    {
+      "id": "wcpg",
+      "name": "Western Cape Provincial Government",
+      "slug": "wcpg",
+      "logo": "/brands/wcpg/logo.svg",
+      "configUrl": "/brands/wcpg/brand.json",
+      "colors": {
+        "primary": "#001489",
+        "secondary": "#FFFFFF",
+        "accent": "#0066CC"
+      },
+      "description": "Supporting businesses across the Western Cape to report ESG performance and drive sustainability.",
+      "features": [
+        "Simple SME questionnaires",
+        "Data validation & quality checks",
+        "ISSB & JSE compliance",
+        "Customizable dashboards"
+      ]
+    },
+    {
+      "id": "jse",
+      "name": "Johannesburg Stock Exchange",
+      "slug": "jse",
+      "logo": "/brands/jse/logo.svg",
+      "configUrl": "/brands/jse/brand.json",
+      "colors": {
+        "primary": "#A3CF61",
+        "secondary": "#000000",
+        "accent": "#A3CF61"
+      },
+      "description": "Enabling listed companies to meet JSE sustainability disclosure requirements and enhance investor transparency.",
+      "features": [
+        "Financial data integration",
+        "Advanced analytics",
+        "Multi-framework reporting",
+        "Real-time dashboards"
+      ]
+    },
+    {
+      "id": "coct",
+      "name": "City of Cape Town",
+      "slug": "coct",
+      "logo": "/brands/coct/logo.svg",
+      "configUrl": "/brands/coct/brand.json",
+      "colors": {
+        "primary": "#08677B",
+        "secondary": "#ECF3F9",
+        "accent": "#CCCC00"
+      },
+      "description": "Helping Cape Town businesses demonstrate environmental and social commitment through comprehensive ESG reporting.",
+      "features": [
+        "Community engagement",
+        "Environmental focus",
+        "Accessibility-first design",
+        "Local impact reporting"
+      ]
+    }
+  ]
+}

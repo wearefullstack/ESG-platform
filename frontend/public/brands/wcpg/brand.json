@@ -1,0 +1,19 @@
+{
+  "name": "Western Cape Provincial Government",
+  "slug": "wcpg",
+  "colors": {
+    "primary": "#001489",
+    "primary_light": "#0066CC",
+    "primary_dark": "#000E5E",
+    "secondary": "#FFFFFF",
+    "accent": "#0066CC",
+    "dark": "#1F1F1F",
+    "light": "#F5F5F5"
+  },
+  "typography": {
+    "family": "Helvetica Neue, Arial, sans-serif",
+    "headings_weight": "600",
+    "body_weight": "400"
+  },
+  "description": "Supporting businesses across the Western Cape to report ESG performance and drive sustainability."
+}

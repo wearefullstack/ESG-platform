@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" width="200" height="60">
+  <!-- JSE - Johannesburg Stock Exchange -->
+  <!-- Primary Color: #A3CF61 (Green/Gold) -->
+  <style>
+    .jse-text { font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; fill: #000000; }
+    .jse-accent { fill: #A3CF61; }
+  </style>
+
+  <!-- Icon - upward trend -->
+  <g class="jse-accent">
+    <polygon points="15,40 20,25 25,30 30,15 35,20"/>
+    <polyline points="15,40 20,25 25,30 30,15 35,20" fill="none" stroke="#A3CF61" stroke-width="2"/>
+  </g>
+
+  <!-- Text -->
+  <text x="45" y="25" class="jse-text" font-size="12">JOHANNESBURG</text>
+  <text x="45" y="40" class="jse-text" font-size="10" opacity="0.7">Stock Exchange</text>
+</svg>
