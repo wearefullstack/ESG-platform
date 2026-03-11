@@ -92,7 +92,7 @@ function App() {
             path="/report"
             element={
               isAuthenticated ? (
-                <ReportGenerationPage />
+                <ReportGenerationPage user={user} onLogout={handleLogout} />
               ) : (
                 <Navigate to="/login" />
               )

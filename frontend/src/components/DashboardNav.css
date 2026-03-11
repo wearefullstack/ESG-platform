@@ -1,0 +1,247 @@
+.dashboard-nav {
+  background: white;
+  border-bottom: 2px solid var(--primary);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+/* Left section: Logo and Title */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 0 0 auto;
+}
+
+.nav-logo {
+  height: 45px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.nav-title h2 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin: 0;
+  font-weight: 800;
+}
+
+.nav-title p {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin: 2px 0 0;
+  font-weight: 500;
+}
+
+/* Center section: Navigation Links */
+.nav-center {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover {
+  background: #f3f4f6;
+  color: var(--primary);
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 20, 137, 0.2);
+}
+
+/* Right section: User Info and Logout */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.user-label {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.user-email {
+  color: var(--primary);
+  font-weight: 700;
+  background: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.logout-btn {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.15);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
+
+/* Brand-specific colors */
+.dashboard-nav-jse {
+  border-bottom-color: #A3CF61;
+}
+
+.dashboard-nav-jse .nav-title h2 {
+  color: #7FA830;
+}
+
+.dashboard-nav-jse .nav-link.active {
+  background: linear-gradient(135deg, #A3CF61 0%, #C8E6A0 100%);
+}
+
+.dashboard-nav-jse .user-email {
+  color: #7FA830;
+  background: rgba(163, 207, 97, 0.1);
+}
+
+.dashboard-nav-coct {
+  border-bottom-color: #08677B;
+}
+
+.dashboard-nav-coct .nav-title h2 {
+  color: #08677B;
+}
+
+.dashboard-nav-coct .nav-link.active {
+  background: linear-gradient(135deg, #08677B 0%, #087FA6 100%);
+}
+
+.dashboard-nav-coct .user-email {
+  color: #08677B;
+  background: rgba(8, 103, 123, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-nav {
+    padding: 12px 20px;
+    gap: 20px;
+  }
+
+  .nav-logo {
+    height: 40px;
+  }
+
+  .nav-title h2 {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-center {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .user-info {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logout-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-nav {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .nav-logo {
+    height: 35px;
+  }
+
+  .nav-title h2 {
+    font-size: 0.9rem;
+  }
+
+  .nav-title p {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .user-label {
+    display: none;
+  }
+
+  .user-email {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  }
+
+  .logout-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}

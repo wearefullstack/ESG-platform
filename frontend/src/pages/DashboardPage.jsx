@@ -12,6 +12,7 @@ import {
   Legend
 } from 'chart.js'
 import { useBrand } from '../context/BrandContext'
+import DashboardNav from '../components/DashboardNav'
 import '../styles/DashboardPage.css'
 
 ChartJS.register(
@@ -125,22 +126,7 @@ export default function DashboardPage({ user, onLogout }) {
 
   return (
     <div className={`dashboard dashboard-${brandSlug}`}>
-      <header className="dashboard-header">
-        <div className="header-brand">
-          {brand && (
-            <img
-              src={`/brands/${brand.slug}/logo.svg`}
-              alt={brand.name}
-              className="header-logo"
-            />
-          )}
-          <h1>ESG Dashboard</h1>
-        </div>
-        <div className="header-actions">
-          <span className="user-email">{user?.email}</span>
-          <button onClick={onLogout} className="logout-button">Logout</button>
-        </div>
-      </header>
+      <DashboardNav currentPage="dashboard" user={user} onLogout={onLogout} />
 
       <div className="dashboard-content">
         <section className="kpis-section">
