@@ -5,12 +5,12 @@
 
 .dashboard-header {
   background: white;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 2px solid var(--primary);
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -18,8 +18,9 @@
 
 .dashboard-header h1 {
   font-size: 1.8rem;
-  color: #1e40af;
+  color: var(--primary);
   margin: 0;
+  font-weight: 700;
 }
 
 .header-actions {
@@ -90,10 +91,10 @@ section h2 {
 
 .kpi-card {
   background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #1e40af;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--primary);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -104,16 +105,16 @@ section h2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, rgba(30, 64, 175, 0.05) 0%, transparent 70%);
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(0, 20, 137, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .kpi-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
 }
 
 .kpi-name {
@@ -152,10 +153,11 @@ section h2 {
 
 .chart-section {
   background: white;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: var(--shadow-md);
   margin-bottom: 40px;
+  border-top: 4px solid var(--primary);
 }
 
 .chart-container {
@@ -164,9 +166,10 @@ section h2 {
 
 .actions-section {
   background: white;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--primary);
 }
 
 .actions-grid {
@@ -190,21 +193,24 @@ section h2 {
 }
 
 .action-button.primary {
-  background: #1e40af;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   color: white;
   border: none;
+  box-shadow: var(--shadow-md);
 }
 
 .action-button.primary:hover {
-  background: #1e3a8a;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
 }
 
 .metrics-section {
   background: white;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: var(--shadow-md);
   margin-bottom: 40px;
+  border-top: 4px solid var(--secondary);
 }
 
 .metrics-header {
@@ -223,16 +229,16 @@ section h2 {
   flex: 1;
   max-width: 300px;
   padding: 10px 15px;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
   font-size: 0.95rem;
-  transition: border-color 0.3s ease;
+  transition: var(--transition);
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #1e40af;
-  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 20, 137, 0.1);
 }
 
 .table-responsive {
@@ -291,12 +297,14 @@ section h2 {
 
 .status-badge.on-track {
   background: #d1fae5;
-  color: #059669;
+  color: var(--secondary);
+  border: 1px solid rgba(5, 150, 105, 0.2);
 }
 
 .status-badge.off-track {
-  background: #fed7aa;
-  color: #b45309;
+  background: #fee2e2;
+  color: var(--error);
+  border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 .no-results {
