@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
 import LoginPage from './pages/LoginPage'
+import OnboardingWizard from './pages/OnboardingWizard'
 import DashboardPage from './pages/DashboardPage'
 import './App.css'
 
@@ -44,6 +46,16 @@ function App() {
     <Router>
       <Routes>
         <Route
+          path="/"
+          element={
+            isAuthenticated ? (
+              <Navigate to="/dashboard" />
+            ) : (
+              <LandingPage />
+            )
+          }
+        />
+        <Route
           path="/login"
           element={
             isAuthenticated ? (
@@ -54,16 +66,25 @@ function App() {
           }
         />
         <Route
+          path="/register"
+          element={
+            isAuthenticated ? (
+              <Navigate to="/dashboard" />
+            ) : (
+              <OnboardingWizard />
+            )
+          }
+        />
+        <Route
           path="/dashboard"
           element={
             isAuthenticated ? (
               <DashboardPage user={user} onLogout={handleLogout} />
             ) : (
-              <Navigate to="/login" />
+              <Navigate to="/" />
             )
           }
         />
-        <Route path="/" element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} />} />
       </Routes>
     </Router>
   )

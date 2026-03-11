@@ -8,6 +8,13 @@ export default defineConfig({
     port: 5173,
     watch: {
       usePolling: true
+    },
+    proxy: {
+      '/api': {
+        target: 'http://esg-backend:5000',
+        changeOrigin: true,
+        rewrite: (path) => path
+      }
     }
   },
   build: {
