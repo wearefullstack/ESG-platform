@@ -44,6 +44,20 @@
   }
 }
 
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
 .dashboard-header h1 {
   font-size: 2rem;
   color: var(--primary);
@@ -448,6 +462,15 @@ section h2 {
     padding: 20px;
   }
 
+  .header-brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-logo {
+    height: 40px;
+  }
+
   .dashboard-header h1 {
     font-size: 1.5rem;
   }
@@ -530,6 +553,14 @@ section h2 {
 
   .dashboard-header {
     padding: 15px;
+  }
+
+  .header-brand {
+    gap: 12px;
+  }
+
+  .header-logo {
+    height: 35px;
   }
 
   .dashboard-header h1 {
