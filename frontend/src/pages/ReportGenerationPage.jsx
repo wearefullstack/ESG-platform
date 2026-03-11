@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import axios from 'axios'
+import { useBrand } from '../context/BrandContext'
 import '../styles/ReportGenerationPage.css'
 
 export default function ReportGenerationPage() {
+  const { brand } = useBrand()
   const [framework, setFramework] = useState('ISSB')
   const [period, setPeriod] = useState('2024-03')
   const [format, setFormat] = useState('pdf')
@@ -68,7 +70,14 @@ export default function ReportGenerationPage() {
   return (
     <div className="report-generation-page">
       <header className="report-header">
-        <h1>📄 Generate ESG Report</h1>
+        {brand && (
+          <img
+            src={`/brands/${brand.slug}/logo.svg`}
+            alt={brand.name}
+            className="report-logo"
+          />
+        )}
+        <h1>Generate ESG Report</h1>
         <p>Export your organization's ESG data in standards-compliant formats</p>
       </header>
 

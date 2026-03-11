@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { useBrand } from '../context/BrandContext'
 import '../styles/OnboardingWizard.css'
 
 export default function OnboardingWizard() {
   const navigate = useNavigate()
+  const { brand } = useBrand()
   const [currentStep, setCurrentStep] = useState(1)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -185,6 +187,13 @@ export default function OnboardingWizard() {
       {/* Header */}
       <div className="wizard-header">
         <div className="header-content">
+          {brand && (
+            <img
+              src={`/brands/${brand.slug}/logo.svg`}
+              alt={brand.name}
+              className="wizard-logo"
+            />
+          )}
           <h1>Welcome to ESG Reporting</h1>
           <p>Complete your organization profile to get started</p>
         </div>

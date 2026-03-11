@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { useBrand } from '../context/BrandContext'
 import '../styles/LoginPage.css'
 
 export default function LoginPage({ onLogin }) {
+  const { brand } = useBrand()
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -39,6 +41,13 @@ export default function LoginPage({ onLogin }) {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
+          {brand && (
+            <img
+              src={`/brands/${brand.slug}/logo.svg`}
+              alt={brand.name}
+              className="login-logo"
+            />
+          )}
           <h1>ESG Reporting Platform</h1>
           <p>Sustainability Disclosure Made Simple</p>
         </div>
