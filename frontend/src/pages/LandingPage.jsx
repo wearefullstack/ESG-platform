@@ -1,9 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import BrandSelector from '../components/BrandSelector'
+import BrandHero from '../components/BrandHero'
 import '../styles/LandingPage.css'
 
 export default function LandingPage() {
   const navigate = useNavigate()
+
+  const handleGetStarted = () => navigate('/register')
 
   const partners = [
     {
@@ -56,21 +59,14 @@ export default function LandingPage() {
   return (
     <div className="landing-page">
       <BrandSelector />
-      {/* Hero Section */}
-      <section className="hero" style={{ backgroundColor: '#001489' }}>
-        <div className="hero-content">
-          <h1 className="hero-title">ESG Reporting Made Simple</h1>
-          <p className="hero-subtitle">
-            A white-labelled sustainability reporting platform for distribution partners and their businesses.
-          </p>
-          <button
-            className="hero-cta"
-            onClick={() => navigate('/register')}
-          >
-            Get Started →
-          </button>
-        </div>
-      </section>
+
+      {/* Dynamic Brand Hero */}
+      <BrandHero
+        title="ESG Reporting Made Simple"
+        subtitle="A white-labelled sustainability reporting platform for distribution partners and their businesses."
+        cta="Get Started"
+        ctaAction={handleGetStarted}
+      />
 
       {/* Value Proposition */}
       <section className="value-prop">
