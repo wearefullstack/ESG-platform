@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import '../styles/LoginPage.css'
 
 export default function LoginPage({ onLogin }) {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
@@ -21,6 +23,8 @@ export default function LoginPage({ onLogin }) {
 
       if (response.data.success) {
         onLogin(response.data.user, response.data.access_token)
+        // Navigate to dashboard after successful login
+        navigate('/dashboard')
       } else {
         setError(response.data.message || 'Login failed')
       }

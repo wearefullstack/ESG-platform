@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage'
 import LoginPage from './pages/LoginPage'
 import OnboardingWizard from './pages/OnboardingWizard'
 import DashboardPage from './pages/DashboardPage'
+import ReportGenerationPage from './pages/ReportGenerationPage'
 import './App.css'
 
 function App() {
@@ -82,6 +83,16 @@ function App() {
               <DashboardPage user={user} onLogout={handleLogout} />
             ) : (
               <Navigate to="/" />
+            )
+          }
+        />
+        <Route
+          path="/report"
+          element={
+            isAuthenticated ? (
+              <ReportGenerationPage />
+            ) : (
+              <Navigate to="/login" />
             )
           }
         />
