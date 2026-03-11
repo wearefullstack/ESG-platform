@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend
 } from 'chart.js'
+import { useBrand } from '../context/BrandContext'
 import '../styles/DashboardPage.css'
 
 ChartJS.register(
@@ -24,6 +25,7 @@ ChartJS.register(
 )
 
 export default function DashboardPage({ user, onLogout }) {
+  const { brand } = useBrand()
   const [dashboard, setDashboard] = useState(null)
   const [loading, setLoading] = useState(true)
   const [tableSearch, setTableSearch] = useState('')
@@ -119,8 +121,10 @@ export default function DashboardPage({ user, onLogout }) {
     ]
   }
 
+  const brandSlug = brand?.slug || 'wcpg'
+
   return (
-    <div className="dashboard">
+    <div className={`dashboard dashboard-${brandSlug}`}>
       <header className="dashboard-header">
         <h1>ESG Dashboard</h1>
         <div className="header-actions">
