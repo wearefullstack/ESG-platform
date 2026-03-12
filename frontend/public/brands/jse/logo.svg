@@ -1,18 +1,13 @@
-<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" width="200" height="60">
-  <!-- JSE - Johannesburg Stock Exchange -->
-  <!-- Primary Color: #A3CF61 (Green/Gold) -->
-  <style>
-    .jse-text { font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; fill: #000000; }
-    .jse-accent { fill: #A3CF61; }
-  </style>
-
-  <!-- Icon - upward trend -->
-  <g class="jse-accent">
-    <polygon points="15,40 20,25 25,30 30,15 35,20"/>
-    <polyline points="15,40 20,25 25,30 30,15 35,20" fill="none" stroke="#A3CF61" stroke-width="2"/>
-  </g>
-
-  <!-- Text -->
-  <text x="45" y="25" class="jse-text" font-size="12">JOHANNESBURG</text>
-  <text x="45" y="40" class="jse-text" font-size="10" opacity="0.7">Stock Exchange</text>
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text { font-family: Arial, sans-serif; font-weight: bold; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+  <!-- Johannesburg Stock Exchange Logo (Professional Placeholder) -->
+  <rect x="18" y="20" width="44" height="40" fill="#A3CF61" opacity="0.9" rx="4"/>
+  <circle cx="40" cy="40" r="14" fill="#000000"/>
+  <circle cx="40" cy="40" r="10" fill="#A3CF61"/>
+  <text x="68" y="32" class="logo-text" font-size="13" fill="#000000">JSE</text>
+  <text x="68" y="50" class="logo-text" font-size="11" fill="#666666">Stock Exchange</text>
 </svg>

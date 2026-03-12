@@ -1,26 +1,14 @@
-<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" width="200" height="60">
-  <!-- CoCT - City of Cape Town -->
-  <!-- Primary Color: #08677B (Teal/Atoll) -->
-  <!-- Accent: #CCCC00 (Rio Grande Yellow) -->
-  <style>
-    .coct-text { font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; fill: #08677B; }
-    .coct-mountain { fill: #08677B; }
-    .coct-accent { fill: #CCCC00; }
-  </style>
-
-  <!-- Table Mountain Icon (simplified rosette) -->
-  <g class="coct-mountain">
-    <!-- Outer ring -->
-    <circle cx="15" cy="30" r="10" fill="none" stroke="#08677B" stroke-width="1"/>
-    <!-- Mountain shape -->
-    <polygon points="15,22 18,28 12,28"/>
-    <polygon points="15,25 17,30 13,30"/>
-  </g>
-
-  <!-- Accent dot -->
-  <circle cx="18" cy="35" r="1.5" class="coct-accent"/>
-
-  <!-- Text -->
-  <text x="35" y="25" class="coct-text" font-size="12">CITY OF CAPE TOWN</text>
-  <text x="35" y="40" class="coct-text" font-size="10" opacity="0.7">Metropolitan Municipality</text>
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text { font-family: Arial, sans-serif; font-weight: bold; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+  <!-- City of Cape Town Logo (Professional Placeholder) -->
+  <circle cx="40" cy="40" r="32" fill="#08677B" opacity="0.9"/>
+  <circle cx="40" cy="40" r="24" fill="#CCCC00" opacity="0.8"/>
+  <circle cx="40" cy="40" r="18" fill="#ECF3F9"/>
+  <polygon points="40,20 32,35 48,35" fill="#08677B"/>
+  <text x="80" y="32" class="logo-text" font-size="14" fill="#08677B">CITY OF</text>
+  <text x="80" y="50" class="logo-text" font-size="14" fill="#08677B">CAPE TOWN</text>
 </svg>

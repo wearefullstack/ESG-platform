@@ -1,18 +1,15 @@
-<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" width="200" height="60">
-  <!-- WCPG - Western Cape Provincial Government -->
-  <!-- Primary Color: #001489 (Deep Blue) -->
-  <style>
-    .wcpg-text { font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; fill: #001489; }
-    .wcpg-icon { fill: #001489; }
-  </style>
-
-  <!-- Icon -->
-  <g class="wcpg-icon">
-    <circle cx="15" cy="30" r="12" opacity="0.3"/>
-    <circle cx="15" cy="30" r="8"/>
-  </g>
-
-  <!-- Text -->
-  <text x="35" y="25" class="wcpg-text" font-size="12">WESTERN CAPE</text>
-  <text x="35" y="40" class="wcpg-text" font-size="10" opacity="0.7">Provincial Government</text>
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text { font-family: Arial, sans-serif; font-weight: bold; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+  <!-- Western Cape Provincial Government Logo (Professional Placeholder) -->
+  <circle cx="40" cy="40" r="28" fill="#001489" opacity="0.9"/>
+  <circle cx="40" cy="40" r="20" fill="#0066CC" opacity="0.8"/>
+  <circle cx="40" cy="40" r="14" fill="#FFFFFF"/>
+  <polygon points="40,15 30,32 50,32" fill="#FFFFFF"/>
+  <polygon points="40,32 30,50 50,50" fill="#FFFFFF"/>
+  <text x="75" y="32" class="logo-text" font-size="12" fill="#001489">WCPG</text>
+  <text x="75" y="50" class="logo-text" font-size="10" fill="#666666">Western Cape</text>
 </svg>
