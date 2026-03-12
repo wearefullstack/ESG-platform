@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--primary) 0%, #0066cc 50%, var(--secondary) 100%);
+  background: linear-gradient(135deg, #f5f8fc 0%, #eef3f9 100%);
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -16,7 +16,7 @@
   right: -10%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 20, 137, 0.05) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }

@@ -268,37 +268,45 @@
 
 /* Brand-specific styles */
 
-/* WCPG - Deep Blue */
+/* WCPG - Deep Blue (subtle) */
 .brand-hero-wcpg {
-  background: linear-gradient(135deg, #001489 0%, #0066CC 50%, #003D99 100%);
+  background: linear-gradient(135deg, #f5f8fc 0%, #eef3f9 100%);
 }
 
 .brand-hero-wcpg .hero-shape {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 20, 137, 0.08);
 }
 
 .brand-hero-wcpg .hero-glow {
-  background: radial-gradient(circle, rgba(0, 102, 204, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 102, 204, 0.1) 0%, transparent 70%);
 }
 
-/* JSE - Green/Gold */
+.brand-hero-wcpg .hero-title {
+  color: #001489;
+}
+
+/* JSE - Green/Gold (subtle) */
 .brand-hero-jse {
-  background: linear-gradient(135deg, #A3CF61 0%, #C8E6A0 50%, #7FA830 100%);
+  background: linear-gradient(135deg, #fafdf5 0%, #f7fdf0 100%);
   color: #000000;
 }
 
 .brand-hero-jse .hero-shape {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(163, 207, 97, 0.08);
 }
 
 .brand-hero-jse .hero-glow {
-  background: radial-gradient(circle, rgba(163, 207, 97, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(163, 207, 97, 0.1) 0%, transparent 70%);
 }
 
 .brand-hero-jse .hero-badge {
-  background: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.2);
+  background: rgba(163, 207, 97, 0.1);
+  border-color: rgba(163, 207, 97, 0.2);
   color: #000000;
+}
+
+.brand-hero-jse .hero-title {
+  color: #7FA830;
 }
 
 .brand-hero-jse .hero-button.primary {
@@ -307,22 +315,22 @@
 }
 
 .brand-hero-jse .hero-button.secondary {
-  border-color: #000000;
-  color: #000000;
+  border-color: #A3CF61;
+  color: #A3CF61;
 }
 
 .brand-hero-jse .hero-button.secondary:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(163, 207, 97, 0.1);
 }
 
 .brand-hero-jse .stat-card {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(163, 207, 97, 0.08);
+  border-color: rgba(163, 207, 97, 0.15);
   color: #000000;
 }
 
 .brand-hero-jse .stat-card:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(163, 207, 97, 0.12);
 }
 
 .brand-hero-jse .scroll-text,
@@ -330,22 +338,22 @@
   color: #000000;
 }
 
-/* CoCT - Teal */
+/* CoCT - Teal (subtle) */
 .brand-hero-coct {
-  background: linear-gradient(135deg, #08677B 0%, #087FA6 50%, #054A5E 100%);
+  background: linear-gradient(135deg, #f4f9fa 0%, #eef7f9 100%);
 }
 
 .brand-hero-coct .hero-shape {
-  background: rgba(204, 204, 0, 0.15);
+  background: rgba(8, 103, 123, 0.08);
 }
 
 .brand-hero-coct .hero-glow {
-  background: radial-gradient(circle, rgba(8, 119, 123, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(8, 119, 123, 0.1) 0%, transparent 70%);
 }
 
 .brand-hero-coct .hero-title {
-  color: #CCCC00;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: #08677B;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive */

@@ -4,17 +4,17 @@
   transition: background 0.3s ease;
 }
 
-/* Brand-specific backgrounds */
+/* Brand-specific backgrounds - subtle */
 .dashboard-wcpg {
-  background: linear-gradient(135deg, rgba(0, 20, 137, 0.02) 0%, rgba(0, 102, 204, 0.02) 100%);
+  background: #fafbfc;
 }
 
 .dashboard-jse {
-  background: linear-gradient(135deg, rgba(163, 207, 97, 0.02) 0%, rgba(200, 230, 160, 0.02) 100%);
+  background: #fafbfc;
 }
 
 .dashboard-coct {
-  background: linear-gradient(135deg, rgba(8, 103, 123, 0.02) 0%, rgba(8, 127, 166, 0.02) 100%);
+  background: #fafbfc;
 }
 
 /* Dashboard Header */
