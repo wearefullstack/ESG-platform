@@ -630,11 +630,11 @@ section h2 {
 
 /* Brand-specific KPI card enhancements */
 .dashboard-jse .kpi-value {
-  color: #7FA830;
+  color: #5a7a1f;
 }
 
 .dashboard-jse .kpi-card::after {
-  background: linear-gradient(90deg, #A3CF61 0%, #C8E6A0 100%);
+  background: linear-gradient(90deg, #5a7a1f 0%, #7FA830 100%);
 }
 
 .dashboard-coct .kpi-value {
@@ -647,7 +647,7 @@ section h2 {
 
 /* Brand-specific chart section borders */
 .dashboard-jse .chart-section {
-  border-top-color: #A3CF61;
+  border-top-color: #5a7a1f;
 }
 
 .dashboard-coct .chart-section {
@@ -655,7 +655,7 @@ section h2 {
 }
 
 .dashboard-jse .metrics-section {
-  border-top-color: #A3CF61;
+  border-top-color: #5a7a1f;
 }
 
 .dashboard-coct .metrics-section {

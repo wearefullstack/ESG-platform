@@ -306,31 +306,31 @@
 }
 
 .brand-hero-jse .hero-title {
-  color: #7FA830;
+  color: #5a7a1f;
 }
 
 .brand-hero-jse .hero-button.primary {
   background: white;
-  color: #A3CF61;
+  color: #5a7a1f;
 }
 
 .brand-hero-jse .hero-button.secondary {
-  border-color: #A3CF61;
-  color: #A3CF61;
+  border-color: #5a7a1f;
+  color: #5a7a1f;
 }
 
 .brand-hero-jse .hero-button.secondary:hover {
-  background: rgba(163, 207, 97, 0.1);
+  background: rgba(90, 122, 31, 0.1);
 }
 
 .brand-hero-jse .stat-card {
-  background: rgba(163, 207, 97, 0.08);
-  border-color: rgba(163, 207, 97, 0.15);
+  background: rgba(90, 122, 31, 0.08);
+  border-color: rgba(90, 122, 31, 0.15);
   color: #000000;
 }
 
 .brand-hero-jse .stat-card:hover {
-  background: rgba(163, 207, 97, 0.12);
+  background: rgba(90, 122, 31, 0.12);
 }
 
 .brand-hero-jse .scroll-text,
