@@ -271,6 +271,7 @@
 /* WCPG - Deep Blue (subtle) */
 .brand-hero-wcpg {
   background: linear-gradient(135deg, #f5f8fc 0%, #eef3f9 100%);
+  color: #1f2937;
 }
 
 .brand-hero-wcpg .hero-shape {
@@ -283,6 +284,34 @@
 
 .brand-hero-wcpg .hero-title {
   color: #001489;
+}
+
+.brand-hero-wcpg .hero-subtitle {
+  color: #4b5563;
+}
+
+.brand-hero-wcpg .hero-badge {
+  background: rgba(0, 20, 137, 0.1);
+  border-color: rgba(0, 20, 137, 0.2);
+  color: #001489;
+}
+
+.brand-hero-wcpg .hero-button.primary {
+  color: #001489;
+}
+
+.brand-hero-wcpg .hero-button.secondary {
+  border-color: #001489;
+  color: #001489;
+}
+
+.brand-hero-wcpg .hero-button.secondary:hover {
+  background: rgba(0, 20, 137, 0.1);
+}
+
+.brand-hero-wcpg .scroll-text,
+.brand-hero-wcpg .scroll-arrow {
+  color: #1f2937;
 }
 
 /* JSE - Green/Gold (subtle) */
@@ -341,6 +370,7 @@
 /* CoCT - Teal (subtle) */
 .brand-hero-coct {
   background: linear-gradient(135deg, #f4f9fa 0%, #eef7f9 100%);
+  color: #1f2937;
 }
 
 .brand-hero-coct .hero-shape {
@@ -354,6 +384,44 @@
 .brand-hero-coct .hero-title {
   color: #08677B;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.brand-hero-coct .hero-subtitle {
+  color: #4b5563;
+}
+
+.brand-hero-coct .hero-badge {
+  background: rgba(8, 103, 123, 0.1);
+  border-color: rgba(8, 103, 123, 0.2);
+  color: #08677B;
+}
+
+.brand-hero-coct .hero-button.primary {
+  color: #08677B;
+}
+
+.brand-hero-coct .hero-button.secondary {
+  border-color: #08677B;
+  color: #08677B;
+}
+
+.brand-hero-coct .hero-button.secondary:hover {
+  background: rgba(8, 103, 123, 0.1);
+}
+
+.brand-hero-coct .stat-card {
+  background: rgba(8, 103, 123, 0.08);
+  border-color: rgba(8, 103, 123, 0.15);
+  color: #1f2937;
+}
+
+.brand-hero-coct .stat-card:hover {
+  background: rgba(8, 103, 123, 0.12);
+}
+
+.brand-hero-coct .scroll-text,
+.brand-hero-coct .scroll-arrow {
+  color: #1f2937;
 }
 
 /* Responsive */

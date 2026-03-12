@@ -200,7 +200,7 @@ section h2 {
 }
 
 .kpi-name {
-  color: #9ca3af;
+  color: #6b7280;
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -383,7 +383,7 @@ section h2 {
 
 .no-results {
   text-align: center;
-  color: #9ca3af;
+  color: #6b7280;
   padding: 40px !important;
   font-style: italic;
 }
