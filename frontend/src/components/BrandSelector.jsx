@@ -25,7 +25,7 @@ export default function BrandSelector() {
         aria-label="Select brand"
       >
         <img
-          src={currentBrand?.logo || '/brands/wcpg/logo.svg'}
+          src={currentBrand?.logo || '/brands/wcpg/logo.png'}
           alt={currentBrand?.name || 'Brand'}
           className="brand-selector-logo"
         />

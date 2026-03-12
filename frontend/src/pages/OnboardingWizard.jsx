@@ -189,7 +189,7 @@ export default function OnboardingWizard() {
         <div className="header-content">
           {brand && (
             <img
-              src={`/brands/${brand.slug}/logo.svg`}
+              src={`/brands/${brand.slug}/logo.png`}
               alt={brand.name}
               className="wizard-logo"
             />

@@ -115,7 +115,7 @@ export default function LandingPage() {
                   style={{ backgroundColor: partner.primary }}
                 >
                   <img
-                    src={`/brands/${partner.slug}/logo.svg`}
+                    src={`/brands/${partner.slug}/logo.png`}
                     alt={partner.name}
                     className="partner-logo"
                   />

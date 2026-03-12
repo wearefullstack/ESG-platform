@@ -13,7 +13,7 @@ export default function DashboardNav({ currentPage, user, onLogout }) {
       <div className="nav-left">
         {brand && (
           <img
-            src={`/brands/${brand.slug}/logo.svg`}
+            src={`/brands/${brand.slug}/logo.png`}
             alt={brand.name}
             className="nav-logo"
           />

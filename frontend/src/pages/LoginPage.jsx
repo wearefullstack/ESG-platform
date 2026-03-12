@@ -43,7 +43,7 @@ export default function LoginPage({ onLogin }) {
         <div className="login-header">
           {brand && (
             <img
-              src={`/brands/${brand.slug}/logo.svg`}
+              src={`/brands/${brand.slug}/logo.png`}
               alt={brand.name}
               className="login-logo"
             />
