@@ -103,6 +103,13 @@
   font-size: 1.1rem;
 }
 
+.badge-icon-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .hero-title {
   font-size: 4rem;
   font-weight: 800;

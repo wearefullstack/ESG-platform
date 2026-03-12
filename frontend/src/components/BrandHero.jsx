@@ -20,7 +20,11 @@ export default function BrandHero({ title, subtitle, cta, ctaAction }) {
 
       <div className="hero-content">
         <div className="hero-badge">
-          <span className="badge-icon">✨</span>
+          <img
+            src={`/brands/${brand.slug}/logo.png`}
+            alt={brand.name}
+            className="badge-icon-logo"
+          />
           <span className="badge-text">{brand.name}</span>
         </div>
 
