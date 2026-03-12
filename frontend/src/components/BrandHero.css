@@ -117,7 +117,6 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   animation: slideUp 0.8s ease-out 0.1s both;
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
@@ -383,7 +382,6 @@
 
 .brand-hero-coct .hero-title {
   color: #08677B;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .brand-hero-coct .hero-subtitle {
