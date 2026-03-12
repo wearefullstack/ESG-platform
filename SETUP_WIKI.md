@@ -11,8 +11,8 @@
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/wearefullstack/Generic-ESG-platform.git
-cd Generic-ESG-platform
+git clone https://github.com/wearefullstack/ESG-platform.git
+cd ESG-platform
 ```
 
 ### Start the Application
@@ -56,7 +56,7 @@ After login, you'll see:
 ## Project Structure
 
 ```
-Generic-ESG-platform/
+ESG-platform/
 ├── backend/                  # Flask API (Python)
 │   ├── app/
 │   │   ├── routes/          # API endpoints
@@ -417,7 +417,7 @@ The following features are planned for Phase C (currently stubbed out):
 
 ### Clone
 ```bash
-git clone https://github.com/wearefullstack/Generic-ESG-platform.git
+git clone https://github.com/wearefullstack/ESG-platform.git
 ```
 
 ### Create Feature Branch

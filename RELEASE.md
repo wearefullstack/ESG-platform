@@ -1,4 +1,4 @@
-# Generic-ESG-Platform - Release v1.0
+# ESG-Platform - Release v1.0
 
 ## Project Summary
 
@@ -58,7 +58,7 @@ A **white-labelled, multi-tenant ESG (Environmental, Social, Governance) reporti
 ## 🗂️ Project Structure
 
 ```
-Generic-ESG-platform/
+ESG-platform/
 ├── frontend/                    # React 18 + Vite
 │   ├── src/
 │   │   ├── pages/              # 5 page components
@@ -117,7 +117,7 @@ Generic-ESG-platform/
 ### Start the Stack
 
 ```bash
-cd Generic-ESG-platform
+cd ESG-platform
 docker-compose up --build -d
 ```
 

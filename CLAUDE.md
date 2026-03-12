@@ -1,4 +1,4 @@
-# Generic-ESG-Platform SPACER
+# ESG-Platform SPACER
 
 ## Project Type
 SPACER - Sales prototype for distribution partners (WCPG, JSE), 2-3 day build
@@ -91,7 +91,7 @@ rm -rf database/data/               # Delete persistent database
 ## Project Structure
 
 ```
-Generic-ESG-platform/
+ESG-platform/
 ├── backend/                        # Flask API
 │   ├── app/
 │   │   ├── __init__.py

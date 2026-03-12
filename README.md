@@ -1,4 +1,4 @@
-# Generic-ESG-Platform
+# ESG-Platform
 
 A white-labelled ESG and sustainability reporting platform for distribution partners (WCPG, JSE, City of Cape Town).
 
@@ -12,7 +12,7 @@ A white-labelled ESG and sustainability reporting platform for distribution part
 
 1. **Clone the repository** (already done):
 ```bash
-cd Generic-ESG-platform
+cd ESG-platform
 ```
 
 2. **Copy environment file**:
@@ -58,7 +58,7 @@ docker-compose down -v
 ## Project Structure
 
 ```
-Generic-ESG-platform/
+ESG-platform/
 ├── backend/                    # Flask API (Python)
 │   ├── app/
 │   │   ├── routes/           # API endpoints
