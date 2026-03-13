@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { BrandProvider } from './context/BrandContext'
-import LandingPage from './pages/LandingPage'
+import MainLandingPage from './pages/MainLandingPage'
+import PartnerLandingPage from './pages/PartnerLandingPage'
 import LoginPage from './pages/LoginPage'
 import OnboardingWizard from './pages/OnboardingWizard'
 import DashboardPage from './pages/DashboardPage'
@@ -48,16 +49,51 @@ function App() {
     <BrandProvider>
       <Router>
         <Routes>
+          {/* Main landing - brand selection */}
           <Route
             path="/"
             element={
               isAuthenticated ? (
                 <Navigate to="/dashboard" />
               ) : (
-                <LandingPage />
+                <MainLandingPage />
               )
             }
           />
+
+          {/* Partner-specific landing pages */}
+          <Route
+            path="/wcpg"
+            element={
+              isAuthenticated ? (
+                <Navigate to="/dashboard" />
+              ) : (
+                <PartnerLandingPage />
+              )
+            }
+          />
+          <Route
+            path="/jse"
+            element={
+              isAuthenticated ? (
+                <Navigate to="/dashboard" />
+              ) : (
+                <PartnerLandingPage />
+              )
+            }
+          />
+          <Route
+            path="/coct"
+            element={
+              isAuthenticated ? (
+                <Navigate to="/dashboard" />
+              ) : (
+                <PartnerLandingPage />
+              )
+            }
+          />
+
+          {/* Login */}
           <Route
             path="/login"
             element={
@@ -68,6 +104,8 @@ function App() {
               )
             }
           />
+
+          {/* Register */}
           <Route
             path="/register"
             element={
@@ -78,6 +116,8 @@ function App() {
               )
             }
           />
+
+          {/* Dashboard (protected) */}
           <Route
             path="/dashboard"
             element={
@@ -88,6 +128,8 @@ function App() {
               )
             }
           />
+
+          {/* Report (protected) */}
           <Route
             path="/report"
             element={
