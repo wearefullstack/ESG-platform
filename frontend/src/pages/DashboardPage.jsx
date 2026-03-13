@@ -233,15 +233,6 @@ export default function DashboardPage({ user, onLogout }) {
             </table>
           </div>
         </section>
-
-        <section className="actions-section">
-          <h2>⚙️ Actions</h2>
-          <div className="actions-grid">
-            <button className="action-button primary">📄 Generate Report</button>
-            <button className="action-button">📁 Upload Data</button>
-            <button className="action-button">📊 View History</button>
-          </div>
-        </section>
       </div>
     </div>
   )

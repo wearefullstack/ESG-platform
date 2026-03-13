@@ -1,3 +1,26 @@
+/* Top Navigation */
+.login-nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.login-nav .nav-brand-link {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.login-nav .nav-brand-link:hover {
+  opacity: 0.8;
+}
+
 .login-container {
   min-height: 100vh;
   display: flex;

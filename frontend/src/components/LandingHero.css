@@ -1,0 +1,274 @@
+.landing-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 30px;
+  background: linear-gradient(135deg, #f5f8fc 0%, #eef3f9 100%);
+  overflow: hidden;
+}
+
+.landing-hero-jse {
+  background: linear-gradient(135deg, #f9fdf3 0%, #f5fcf1 100%);
+}
+
+.landing-hero-coct {
+  background: linear-gradient(135deg, #f0f7f9 0%, #e8f3f7 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  animation: slideUp 0.8s ease-out;
+}
+
+/* Hero Decorations */
+.hero-decoration {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.hero-deco-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary);
+  top: -50px;
+  left: -50px;
+}
+
+.hero-deco-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--primary);
+  bottom: 100px;
+  right: 50px;
+}
+
+.hero-deco-3 {
+  width: 150px;
+  height: 150px;
+  background: var(--primary);
+  bottom: -30px;
+  left: 100px;
+}
+
+/* Title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Benefits */
+.hero-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+/* CTA Buttons */
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.hero-btn-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 20, 137, 0.2);
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 20, 137, 0.3);
+}
+
+.hero-btn-secondary {
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero-btn-secondary:hover {
+  background: #f9fafb;
+  transform: translateY(-2px);
+}
+
+/* Brand-specific button colors */
+.landing-hero-jse .hero-btn-primary {
+  background: #A3CF61;
+  box-shadow: 0 4px 16px rgba(163, 207, 97, 0.2);
+}
+
+.landing-hero-jse .hero-btn-primary:hover {
+  box-shadow: 0 8px 24px rgba(163, 207, 97, 0.3);
+}
+
+.landing-hero-jse .hero-btn-secondary {
+  color: #7FA830;
+  border-color: #7FA830;
+}
+
+.landing-hero-coct .hero-btn-primary {
+  background: #08677B;
+  box-shadow: 0 4px 16px rgba(8, 103, 123, 0.2);
+}
+
+.landing-hero-coct .hero-btn-primary:hover {
+  box-shadow: 0 8px 24px rgba(8, 103, 123, 0.3);
+}
+
+.landing-hero-coct .hero-btn-secondary {
+  color: #08677B;
+  border-color: #08677B;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .landing-hero {
+    min-height: 80vh;
+    padding: 60px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-benefits {
+    margin-bottom: 30px;
+  }
+
+  .hero-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-hero {
+    min-height: 70vh;
+    padding: 50px 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .hero-deco-1,
+  .hero-deco-2,
+  .hero-deco-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-hero {
+    min-height: 60vh;
+    padding: 40px 12px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-benefits {
+    margin-bottom: 25px;
+    gap: 12px;
+  }
+
+  .benefit-item {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    padding: 11px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

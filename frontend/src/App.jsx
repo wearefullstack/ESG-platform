@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { BrandProvider } from './context/BrandContext'
+import DemoBanner from './components/DemoBanner'
 import MainLandingPage from './pages/MainLandingPage'
 import PartnerLandingPage from './pages/PartnerLandingPage'
 import LoginPage from './pages/LoginPage'
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <BrandProvider>
+      <DemoBanner />
       <Router>
         <Routes>
           {/* Main landing - brand selection */}

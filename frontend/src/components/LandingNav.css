@@ -1,0 +1,167 @@
+.landing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Left: Branding */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+/* Right: Buttons */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  white-space: nowrap;
+}
+
+.nav-btn-secondary {
+  background: transparent;
+  color: #6b7280;
+  border: 2px solid #e5e7eb;
+}
+
+.nav-btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.nav-btn-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 20, 137, 0.15);
+}
+
+.nav-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 20, 137, 0.25);
+}
+
+/* Brand-specific colors */
+.landing-nav-jse .nav-brand {
+  color: #7FA830;
+}
+
+.landing-nav-jse .nav-btn-primary {
+  background: #A3CF61;
+  box-shadow: 0 4px 12px rgba(163, 207, 97, 0.15);
+}
+
+.landing-nav-jse .nav-btn-primary:hover {
+  box-shadow: 0 6px 16px rgba(163, 207, 97, 0.25);
+}
+
+.landing-nav-coct .nav-brand {
+  color: #08677B;
+}
+
+.landing-nav-coct .nav-btn-primary {
+  background: #08677B;
+  box-shadow: 0 4px 12px rgba(8, 103, 123, 0.15);
+}
+
+.landing-nav-coct .nav-btn-primary:hover {
+  box-shadow: 0 6px 16px rgba(8, 103, 123, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 10px 20px;
+    gap: 20px;
+  }
+
+  .nav-logo {
+    height: 35px;
+  }
+
+  .nav-brand {
+    font-size: 1rem;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 10px 15px;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    height: 32px;
+  }
+
+  .nav-brand {
+    font-size: 0.95rem;
+  }
+
+  .nav-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .nav-logo {
+    height: 28px;
+  }
+
+  .nav-brand {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .nav-btn-secondary {
+    display: none;
+  }
+}

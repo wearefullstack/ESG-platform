@@ -184,6 +184,13 @@ export default function OnboardingWizard() {
 
   return (
     <div className="onboarding-wizard">
+      {/* Top Navigation */}
+      <nav className="wizard-nav">
+        <button className="nav-brand-link" onClick={() => navigate('/')}>
+          ESG Platform
+        </button>
+      </nav>
+
       {/* Header */}
       <div className="wizard-header">
         <div className="header-content">

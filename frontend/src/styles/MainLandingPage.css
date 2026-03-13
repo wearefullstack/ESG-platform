@@ -1,37 +1,15 @@
+/* Main Landing Page - Comprehensive Redesign */
 .main-landing {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  min-height: 100vh;
+  background: white;
 }
 
-/* Header */
-.main-header {
-  background: linear-gradient(135deg, #f5f8fc 0%, #eef3f9 100%);
-  color: #1f2937;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.main-header .header-content h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 10px;
-  letter-spacing: -0.02em;
-  color: #001489;
-}
-
-.main-header .header-content p {
-  font-size: 1.25rem;
-  opacity: 1;
-  font-weight: 300;
-  color: #4b5563;
-}
-
-/* Partner Selection */
+/* Partner Selection Section */
 .partner-selection {
-  flex: 1;
-  padding: 60px 20px;
+  padding: 80px 30px;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
 }
 
 .partner-selection .container {
@@ -39,11 +17,28 @@
   margin: 0 auto;
 }
 
+.partner-selection-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.partner-selection-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.partner-selection-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
 .partner-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  margin-bottom: 40px;
 }
 
 .partner-card {
@@ -119,6 +114,96 @@
   transform: translateY(0);
 }
 
+/* Partner Card Styling */
+.partner-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+/* Demo Badge on Partner Cards */
+.demo-badge-card {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #f59e0b;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.partner-logo-container {
+  margin-bottom: 25px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.partner-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.partner-description {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.partner-cta {
+  background: #001489;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  width: 100%;
+  max-width: 280px;
+}
+
+.partner-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 20, 137, 0.2);
+}
+
+.partner-cta:active {
+  transform: translateY(0);
+}
+
 /* Footer */
 .main-footer {
   background: #f3f4f6;
@@ -127,24 +212,59 @@
   text-align: center;
   font-size: 0.9rem;
   border-top: 1px solid #e5e7eb;
+  margin-top: auto;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .main-header .header-content h1 {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .partner-selection {
+    padding: 60px 20px;
   }
 
-  .main-header .header-content p {
+  .partner-selection-header {
+    margin-bottom: 40px;
+  }
+
+  .partner-selection-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .partner-selection-header p {
     font-size: 1rem;
   }
 
-  .main-header {
-    padding: 40px 20px;
+  .partner-cards-grid {
+    gap: 20px;
   }
 
+  .partner-card {
+    padding: 30px 25px;
+  }
+
+  .partner-logo-container {
+    height: 70px;
+  }
+
+  .partner-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
   .partner-selection {
-    padding: 40px 20px;
+    padding: 50px 15px;
+  }
+
+  .partner-selection-header {
+    margin-bottom: 30px;
+  }
+
+  .partner-selection-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .partner-selection-header p {
+    font-size: 0.95rem;
   }
 
   .partner-cards-grid {
@@ -178,16 +298,16 @@
 }
 
 @media (max-width: 480px) {
-  .main-header .header-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .main-header {
-    padding: 30px 15px;
-  }
-
   .partner-selection {
-    padding: 30px 15px;
+    padding: 40px 12px;
+  }
+
+  .partner-selection-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .partner-selection-header p {
+    font-size: 0.9rem;
   }
 
   .partner-card {
@@ -200,5 +320,14 @@
 
   .partner-name {
     font-size: 1.1rem;
+  }
+
+  .partner-description {
+    font-size: 0.9rem;
+  }
+
+  .partner-cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

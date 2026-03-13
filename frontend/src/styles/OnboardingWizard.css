@@ -1,3 +1,31 @@
+/* Top Navigation */
+.wizard-nav {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.wizard-nav .nav-brand-link {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.wizard-nav .nav-brand-link:hover {
+  opacity: 0.8;
+}
+
 .onboarding-wizard {
   min-height: 100vh;
   background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);

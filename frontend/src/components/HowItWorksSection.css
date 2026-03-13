@@ -1,0 +1,235 @@
+.how-it-works {
+  padding: 80px 30px;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.how-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.how-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.how-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+/* Step Item */
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Step Circle */
+.step-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 20, 137, 0.15);
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.step-number {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Step Icon */
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+/* Step Title */
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+/* Step Subtitle */
+.step-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Step Connector - connects circles horizontally on desktop */
+.step-connector {
+  position: absolute;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 50%, transparent 100%);
+  top: 40px;
+  left: 50%;
+  width: calc(100% + 20px);
+  z-index: 1;
+  display: none;
+}
+
+/* Show connectors on desktop only (4-column layout) */
+.step-item:not(:last-child) .step-connector {
+  display: block;
+}
+
+/* Brand-specific colors are handled by BrandContext via CSS variables */
+/* No need to override here - var(--primary) will automatically use the brand color */
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .how-it-works {
+    padding: 60px 20px;
+  }
+
+  .how-header {
+    margin-bottom: 40px;
+  }
+
+  .how-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .how-header p {
+    font-size: 1rem;
+  }
+
+  .steps-grid {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-circle {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 12px;
+  }
+
+  .step-number {
+    font-size: 1.75rem;
+  }
+
+  .step-title {
+    font-size: 1rem;
+  }
+
+  .step-connector {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 50px 15px;
+  }
+
+  .how-header {
+    margin-bottom: 30px;
+  }
+
+  .how-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .how-header p {
+    font-size: 0.95rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .step-circle {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .step-number {
+    font-size: 1.5rem;
+  }
+
+  .step-icon {
+    font-size: 2rem;
+  }
+
+  .step-title {
+    font-size: 0.95rem;
+  }
+
+  .step-subtitle {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 40px 12px;
+  }
+
+  .how-header {
+    margin-bottom: 20px;
+  }
+
+  .how-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .how-header p {
+    font-size: 0.9rem;
+  }
+
+  .step-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .step-number {
+    font-size: 1.25rem;
+  }
+
+  .step-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .step-title {
+    font-size: 0.9rem;
+  }
+
+  .step-subtitle {
+    font-size: 0.8rem;
+  }
+}

@@ -18,20 +18,29 @@ export default function LoginPage({ onLogin }) {
     setError('')
 
     try {
-      const response = await axios.post('/api/auth/login', {
-        email,
-        password
-      })
+      // Demo mode: Accept any email/password combination
+      // In production, this would authenticate against a real backend
+      if (email && email.trim()) {
+        // Create a demo user object
+        const demoUser = {
+          email: email,
+          name: email.split('@')[0],
+          organization: brand?.name || 'ESG Organization'
+        }
 
-      if (response.data.success) {
-        onLogin(response.data.user, response.data.access_token)
+        // Generate a simple demo token
+        const demoToken = 'demo-token-' + Date.now()
+
+        // Call onLogin with demo credentials
+        onLogin(demoUser, demoToken)
+
         // Navigate to dashboard after successful login
         navigate('/dashboard')
       } else {
-        setError(response.data.message || 'Login failed')
+        setError('Please enter a valid email address')
       }
     } catch (err) {
-      setError(err.response?.data?.message || 'Login failed. Please try again.')
+      setError('Login failed. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -39,6 +48,13 @@ export default function LoginPage({ onLogin }) {
 
   return (
     <div className="login-container">
+      {/* Top Navigation */}
+      <nav className="login-nav">
+        <button className="nav-brand-link" onClick={() => navigate('/')}>
+          ESG Platform
+        </button>
+      </nav>
+
       <div className="login-box">
         <div className="login-header">
           {brand && (

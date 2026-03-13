@@ -1,23 +1,44 @@
-.dashboard-nav {
-  background: white;
-  border-bottom: 2px solid var(--primary);
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+.nav-container {
   position: sticky;
   top: 0;
   z-index: 99;
+  background: #f9fafb;
 }
 
-/* Left section: Logo and Title */
+.dashboard-nav {
+  background: #f9fafb;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  min-height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+/* Left section: Logo only */
 .nav-left {
   display: flex;
   align-items: center;
   gap: 15px;
   flex: 0 0 auto;
+}
+
+.nav-home-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-home-btn:hover {
+  opacity: 0.8;
 }
 
 .nav-logo {
@@ -27,52 +48,8 @@
   object-fit: contain;
 }
 
-.nav-title h2 {
-  font-size: 1.1rem;
-  color: var(--primary);
-  margin: 0;
-  font-weight: 800;
-}
 
-.nav-title p {
-  font-size: 0.75rem;
-  color: #9ca3af;
-  margin: 2px 0 0;
-  font-weight: 500;
-}
-
-/* Center section: Navigation Links */
-.nav-center {
-  display: flex;
-  gap: 10px;
-  flex: 1;
-  justify-content: center;
-}
-
-.nav-link {
-  padding: 10px 20px;
-  border: none;
-  background: transparent;
-  color: #6b7280;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
-}
-
-.nav-link:hover {
-  background: #f3f4f6;
-  color: var(--primary);
-}
-
-.nav-link.active {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 20, 137, 0.2);
-}
-
-/* Right section: User Info and Logout */
+/* Right section: Breadcrumb and User Dropdown */
 .nav-right {
   display: flex;
   align-items: center;
@@ -80,71 +57,114 @@
   flex: 0 0 auto;
 }
 
-.user-info {
+/* User Dropdown */
+.user-dropdown {
+  position: relative;
+}
+
+.user-dropdown-btn {
+  padding: 8px 12px;
+  background: none;
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
 }
 
-.user-label {
+.user-dropdown-btn:hover {
+  opacity: 0.7;
+}
+
+/* Dropdown Menu */
+.user-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+  z-index: 1000;
+  margin-top: 8px;
+  padding: 12px 0;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown-item .user-label {
   color: #9ca3af;
   font-weight: 500;
+  font-size: 0.85rem;
 }
 
-.user-email {
+.dropdown-item .user-email {
   color: var(--primary);
   font-weight: 700;
-  background: #f3f4f6;
-  padding: 4px 10px;
-  border-radius: 4px;
+  font-size: 0.95rem;
 }
 
-.logout-btn {
+.dropdown-menu-item {
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu-item:hover {
+  background: #f3f4f6;
+  color: var(--primary);
+}
+
+.dropdown-menu-item:last-of-type {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.dropdown-logout-btn {
   padding: 10px 16px;
   background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 0;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.15);
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4px;
 }
 
-.logout-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+.dropdown-logout-btn:hover {
+  opacity: 0.9;
 }
 
 /* Brand-specific colors */
-.dashboard-nav-jse {
-  border-bottom-color: #A3CF61;
-}
-
 .dashboard-nav-jse .nav-title h2 {
   color: #7FA830;
-}
-
-.dashboard-nav-jse .nav-link.active {
-  background: linear-gradient(135deg, #A3CF61 0%, #C8E6A0 100%);
 }
 
 .dashboard-nav-jse .user-email {
   color: #7FA830;
   background: rgba(163, 207, 97, 0.1);
-}
-
-.dashboard-nav-coct {
-  border-bottom-color: #08677B;
-}
-
-.dashboard-nav-coct .nav-title h2 {
-  color: #08677B;
-}
-
-.dashboard-nav-coct .nav-link.active {
-  background: linear-gradient(135deg, #08677B 0%, #087FA6 100%);
 }
 
 .dashboard-nav-coct .user-email {
@@ -153,18 +173,14 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .dashboard-nav {
-    padding: 12px 20px;
+    padding: 15px 30px;
     gap: 20px;
   }
 
   .nav-logo {
     height: 40px;
-  }
-
-  .nav-title h2 {
-    font-size: 1rem;
   }
 
   .nav-link {
@@ -175,73 +191,76 @@
 
 @media (max-width: 768px) {
   .dashboard-nav {
-    flex-direction: column;
+    padding: 12px 20px;
     gap: 15px;
-    padding: 15px;
+    min-height: 65px;
   }
 
-  .nav-left {
-    width: 100%;
-    justify-content: center;
+  /* Hide breadcrumb on tablet/mobile to save space */
+  .breadcrumb {
+    display: none;
   }
 
-  .nav-center {
-    width: 100%;
-    justify-content: center;
+  .nav-logo {
+    height: 38px;
   }
 
-  .nav-right {
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .user-info {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logout-btn {
-    width: 100%;
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.85rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .dashboard-nav {
-    padding: 12px;
-    gap: 10px;
+    padding: 12px 16px;
+    gap: 12px;
+    min-height: 60px;
   }
 
   .nav-logo {
     height: 35px;
   }
 
-  .nav-title h2 {
-    font-size: 0.9rem;
-  }
-
-  .nav-title p {
-    display: none;
+  .nav-center {
+    gap: 5px;
   }
 
   .nav-link {
-    padding: 8px 12px;
+    padding: 6px 10px;
     font-size: 0.8rem;
   }
 
-  .user-label {
-    display: none;
+  .user-dropdown-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-nav {
+    padding: 10px 12px;
+    gap: 10px;
+    min-height: 56px;
   }
 
-  .user-email {
-    font-size: 0.8rem;
-    padding: 3px 8px;
+  .nav-logo {
+    height: 32px;
   }
 
-  .logout-btn {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+  .nav-center {
+    gap: 3px;
+  }
+
+  .nav-link {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+  }
+
+  .user-dropdown-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
   }
 }
