@@ -7,8 +7,8 @@
 
 /* Header */
 .main-header {
-  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-  color: white;
+  background: linear-gradient(135deg, #f5f8fc 0%, #eef3f9 100%);
+  color: #1f2937;
   padding: 60px 20px;
   text-align: center;
 }
@@ -18,12 +18,14 @@
   font-weight: 800;
   margin-bottom: 10px;
   letter-spacing: -0.02em;
+  color: #001489;
 }
 
 .main-header .header-content p {
   font-size: 1.25rem;
-  opacity: 0.9;
+  opacity: 1;
   font-weight: 300;
+  color: #4b5563;
 }
 
 /* Partner Selection */
@@ -119,11 +121,12 @@
 
 /* Footer */
 .main-footer {
-  background: #1f2937;
-  color: white;
+  background: #f3f4f6;
+  color: #6b7280;
   padding: 30px 20px;
   text-align: center;
   font-size: 0.9rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 /* Responsive */
